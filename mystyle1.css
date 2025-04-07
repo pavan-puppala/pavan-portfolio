@@ -1,0 +1,219 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    font-family:'Poppins', sans-serif;
+    background-color:cornsilk;
+}
+
+a{
+    color:#4a76ee;
+    text-decoration:none;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 50px;
+    height:80px;
+}
+nav .left a{
+    color:#1a1c20;
+    font-size:22px;
+    font-weight:600;
+}
+nav .right a{
+    color:#1a1c20;
+    margin:0 10px;
+}
+nav .right a:last-child{
+    color:#eeeff1;
+    background-color:#1a1c20;
+    padding:5px 15px;
+    border-radius: 5px;
+}
+nav .right a span{
+    margin-left:5px;
+}
+.personal-section{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0 50px;
+    margin:50px 0;
+    margin-bottom:100px;
+    gap: 20px;
+}
+.personal-section .text{
+    flex:5;
+}
+.personal-section .text h2{
+    font-size:45px;
+}
+.personal-section .text p{
+    font-size:20px;
+}
+.personal-section .text .links{
+    margin-top: 25px;
+}
+
+.personal-section .text .links a{
+    display:inline-block;
+    padding:5px 10px;
+    border:2px solid #4a76ee;
+    border-radius:5px;
+    margin-right:10px;
+    margin-bottom:10px;
+    transition:.1s;
+}
+.personal-section .text .links a:hover{
+    color:#1a1c20;
+    border:2px solid #1a1c20;
+}
+.personal-section .headshot{
+    flex:2;
+    display:flex;
+    justify-content:right;
+}
+.personal-section .headshot img{
+    width:400px;
+    object-fit: cover;
+    border-radius:50%;
+}
+/* SECTION :Skills */
+.skills-section{
+    padding:0 50px;
+    margin-bottom:100px;
+    margin-top:200px;
+}
+.skills-section h2{
+    margin-top:200px;
+    text-align:center;
+    font-size:35px;
+}
+.skills-section .text{
+    text-align:center;
+    margin-bottom:20px;
+}
+.skills-section .cells{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+.skills-section .cells .cell{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:200px;
+    padding:10px 20px;
+    margin:10px;
+    gap:10px;
+    border:1.5px solid lightgray;
+    border-radius:5px;
+}
+.skills-section .cells .cell span{
+    font-size:18px;
+}
+.education-section{
+    padding:0 50px;
+    margin-top:550px;
+    margin-bottom:100px;
+}
+.education-section h2{
+    text-align:center;
+    font-size:35px;
+}
+.education-section .text{
+    margin-left:50px;
+    margin-top:25px;
+}
+.education-section .text span{
+    color:darkcyan;
+    font-weight:bold;
+}
+.education-section  dd{
+    font-size:20px;
+    margin-left:75px;
+    margin-top:20px;
+}
+.education-section  dt{
+    font-size:22px;
+    margin-top:20px;
+}
+.contact-section h2{
+    margin-top:500px;
+    text-align:center;
+    font-size:35px;
+}
+.contact-section .details{
+    margin-left:100px;
+    font-size:22px;
+    font-weight: bold;
+    margin-bottom:500px;
+    margin-top:100px;
+}
+
+
+@media (max-width:850px){
+    .personal-section .text h2{
+        font-size:35px;
+    }
+}
+@media (max-width:740px){
+    .personal-section{
+        flex-direction:column-reverse;
+    }
+    .personal-section .headshot img{
+        width:300px;
+    }
+}
+@media (max-width:600px){
+    nav{
+        padding:0 20px;
+    }
+    nav .right a{
+        font-size:22px;
+    }
+    nav .right a:last-child{
+        color:#1a1c20;
+        background-color:transparent;
+        padding:0;
+    }
+    nav .right a span{
+        display:none;
+
+    }
+    .personal-section{
+        padding:0 20px;
+    }
+    .personal-section .text h2{
+        font-size:30px;
+    }
+    .personal-section .text p{
+        font-size:18px;
+    }
+
+    .skills-section{
+        padding:0 20px;
+    }
+    .skills-section .cells .cell span{
+        font-size:16px;
+    }
+    .education-section{
+        padding:0 20px;
+    }
+    .education-section dd{
+        font-size:18px;
+    }
+    .education-section dt{
+        font-size:20px;
+    }
+    .contact-section{
+        font-size:20px
+    }
+}
