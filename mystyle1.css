@@ -186,7 +186,6 @@ nav .right a span{
     }
     nav .right a span{
         display:none;
-
     }
     .personal-section{
         padding:0 20px;
@@ -197,7 +196,6 @@ nav .right a span{
     .personal-section .text p{
         font-size:18px;
     }
-
     .skills-section{
         padding:0 20px;
     }
@@ -216,7 +214,13 @@ nav .right a span{
     .contact-section{
         font-size:20px
     }
-    /* Back to Top Button */
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
+/* Back to Top Button */
 .back-to-top-container {
     position: fixed;
     bottom: 30px;
@@ -242,7 +246,10 @@ nav .right a span{
     background-color: #4a76ee;
     transform: translateY(-5px);
 }
-    @media (max-width: 600px) {
+
+
+
+@media (max-width: 600px) {
     .back-to-top {
         width: 40px;
         height: 40px;
