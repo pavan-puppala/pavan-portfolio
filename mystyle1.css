@@ -216,4 +216,40 @@ nav .right a span{
     .contact-section{
         font-size:20px
     }
+    /* Back to Top Button */
+.back-to-top-container {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 1000;
+}
+
+.back-to-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #1a1c20;
+    color: white;
+    border-radius: 50%;
+    font-size: 20px;
+    transition: all 0.3s ease;
+    
+}
+
+.back-to-top:hover {
+    background-color: #4a76ee;
+    transform: translateY(-5px);
+}
+    @media (max-width: 600px) {
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .back-to-top-container {
+        bottom: 20px;
+        right: 20px;
+    }
 }
