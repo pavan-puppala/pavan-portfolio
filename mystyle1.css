@@ -172,7 +172,7 @@ nav .right a span{
         width:300px;
     }
 }
-@media (max-width:600px){
+@media (max-width:450px){
     nav{
         padding:0 20px;
     }
